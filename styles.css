@@ -112,6 +112,11 @@
   text-align: left;
   padding: 0 6vw;
   max-width: 1000px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .capa-logos {
   display: flex;
@@ -242,8 +247,9 @@
   color: #fff;
   box-shadow: 0 14px 34px rgba(248, 71, 30, 0.28);
 }
+.score-numwrap { display: flex; align-items: baseline; justify-content: center; gap: 0.15em; }
 .score-num { font-family: 'Sora', sans-serif; font-weight: 800; font-size: 3.6em; line-height: 1; }
-.score-den { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1em; opacity: 0.9; margin-top: -0.1em; }
+.score-den { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.1em; opacity: 0.85; }
 .score-cap { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.6em; font-weight: 600; margin-top: 0.6em; opacity: 0.95; }
 .score-sub { font-size: 0.62em; margin-top: 0.5em; opacity: 0.9; }
 
@@ -264,22 +270,14 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 1em;
+  justify-content: flex-start;
+  padding-left: 1em;
   color: #fff;
   font-weight: 600;
   font-size: 0.72em;
+  white-space: nowrap;
 }
 .bar-fill-2 { background: #F8843E; }
-.bar-axis {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 108px;
-  font-size: 0.66em;
-  color: var(--ink-soft);
-  border-top: 1px solid rgba(31,31,31,0.12);
-  padding-top: 0.4em;
-}
 
 /* ================= SUGESTÕES (E1 Q2) ================= */
 .sug-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2em; }
@@ -356,7 +354,7 @@
 }
 .quote:nth-child(2) { border-left-color: var(--blue); }
 .quote:nth-child(3) { border-left-color: var(--yellow); }
-.quote:nth-child(4) { border-left-color: var(--orange); }
+.quote-green { border-left-color: #25362F; }
 
 /* ================= INSIGHT 1 ================= */
 .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1em; margin-top: 0.3em; }
