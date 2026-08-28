@@ -90,7 +90,7 @@
 .s-capa { color: var(--ink); overflow: hidden; }
 .capa-deco {
   position: absolute;
-  right: -160px; top: -160px;
+  right: -280px; top: -160px;
   width: 620px; height: 620px;
   border-radius: 50%;
   border: 120px solid var(--orange);
