@@ -406,8 +406,6 @@ strong { font-weight: 600; }
 .assinatura-final {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 8mm;
   padding-top: 7mm;
   border-top: .3mm solid var(--filete);
 }

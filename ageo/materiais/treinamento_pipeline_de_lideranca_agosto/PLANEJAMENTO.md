@@ -137,9 +137,14 @@ faixa horizontal no topo da página do autodiagnóstico — e ali ela trabalha, 
 6 afirmações testam degraus diferentes. Custo: zero folha extra. Na V2 continua com
 página própria e explicada.
 
-**Exceção autorizada ao texto da V1.** A assinatura da capa perdeu o "• material
-editável": é informação interna, e o participante recebe o material já impresso. Foi
-a única palavra removida do original.
+**Remoções autorizadas no texto da V1.** Duas, ambas a pedido da cliente:
+
+1. A assinatura da capa perdeu o "• material editável" — informação interna, e o
+   participante recebe o material já impresso.
+2. Saiu do rodapé da última página o "Base: Pipeline da Liderança — Ram Charan,
+   Stephen Drotter e James Noel".
+
+Fora isso, nenhuma palavra do original mudou.
 
 ### V2 — Autoral · 10 folhas
 
@@ -234,8 +239,7 @@ Confirmados pela cliente.
 - `conteudo_novo.txt` confirmado: bloco 1 = instrução da atividade 1, bloco 2 = instrução
   da atividade 2. O terceiro bloco é cópia idêntica do segundo — descartado.
 - **V2:** copy nova só nas 3 páginas adicionadas.
-- A referência bibliográfica (Charan, Drotter e Noel) sai do rodapé de uma página só e
-  ganha lugar fixo no encerramento.
+- A referência bibliográfica (Charan, Drotter e Noel) foi removida a pedido da cliente.
 
 ---
 
