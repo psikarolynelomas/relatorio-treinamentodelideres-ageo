@@ -1,18 +1,22 @@
 # Treinamento · Pipeline da Liderança — AGEO (Agosto)
 
-Material de aplicação prática do Programa de Desenvolvimento de Líderes da AGEO,
-conduzido pela Sinapsy. Reconstrução da apresentação original com a identidade
-visual do relatório do PDL.
+Workbook impresso de exercícios do Programa de Desenvolvimento de Líderes da AGEO,
+conduzido pela Sinapsy. Reconstrução do material original com a identidade visual do
+relatório do PDL.
+
+**Entrega:** PDF A4 retrato, impressão colorida, frente e verso.
+**Interação:** papel e caneta nos exercícios, QR code nos formulários.
 
 ## Estrutura
 
 ```
 .
-├── PLANEJAMENTO.md     plano completo: estrutura, design, conteúdo, skills, fases
-├── assets/             QRs, logos, foto
-├── shared/             tokens.css e print.css compartilhados pelas duas versões
-├── v1-fiel/            texto original intacto, design e interação refeitos
-└── v2-autoral/         mesmo conteúdo + slides que fecham os buracos do argumento
+├── PLANEJAMENTO.md     plano completo: estrutura, design, impressão, skills, fases
+├── assets/             QRs, selo AGEO, logo Sinapsy, foto
+├── shared/             tokens.css e print.css (grade A4, pauta, componentes)
+├── v1-fiel/            texto original intacto, design e usabilidade refeitos
+├── v2-autoral/         mesmo conteúdo + páginas que fecham os buracos do argumento
+└── pdf/                PDFs gerados
 ```
 
 ## Duas versões
@@ -20,8 +24,10 @@ visual do relatório do PDL.
 | | V1 — Fiel | V2 — Autoral |
 |---|---|---|
 | Texto original | intocado | intocado |
-| Slides novos | só os 3 pedidos nos áudios | + 3 de estrutura de argumento |
-| Total | 9 slides | 12 slides |
+| Páginas novas | só as 3 pedidas nos áudios | + 3 de estrutura de argumento |
+| Total | 8 páginas | 12 páginas |
+
+Ambas em múltiplo de 4, para fechar certo em frente-e-verso.
 
 ## Base
 

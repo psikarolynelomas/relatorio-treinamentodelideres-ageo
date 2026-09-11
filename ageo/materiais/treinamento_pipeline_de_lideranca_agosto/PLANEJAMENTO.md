@@ -1,25 +1,39 @@
 # Planejamento — Pipeline da Liderança (AGEO · Agosto)
 
-Reconstrução da apresentação `apresentacao_original.pptx` em duas versões, usando a identidade visual do relatório do PDL como referência.
+Workbook impresso de exercícios, entregue em PDF, construído sobre a identidade visual
+do relatório do PDL.
 
-- **Fonte de design:** `index.html` + `styles.css` na raiz deste repositório — é o arquivo que gerou o PDF `referencia_de_formato_e_identidade_visual.pdf`.
-- **Fonte de conteúdo:** `apresentacao_original.pptx` (6 slides) + `conteudo_novo.txt` + 3 áudios de instrução.
+| | |
+|---|---|
+| **Entrega** | PDF A4 retrato, impressão colorida |
+| **Uso** | Impresso e distribuído aos participantes |
+| **Interação** | Papel e caneta nos exercícios · QR code nos formulários |
+| **Versões** | V1 fiel (8 páginas) · V2 autoral (12 páginas) |
+| **Fonte de design** | `index.html` e `styles.css` na raiz do repositório |
+| **Fonte de conteúdo** | `apresentacao_original.pptx` + `conteudo_novo.txt` + áudios |
 
 ---
 
-## 1. Objetivo da apresentação
+## 1. Objetivo do material
 
-Isto não é um material para ser assistido. É um **instrumento de trabalho do fim do treinamento**. O sucesso não é "o participante entendeu o Pipeline de Liderança" — é o participante sair da sala com coisas escritas e uma delas marcada na agenda de amanhã.
+Não é um material para ser assistido nem lido. É um **caderno de exercícios que o
+participante leva embora preenchido**. O sucesso não é "entendeu o Pipeline de
+Liderança" — é sair da sala com as folhas escritas e uma ação marcada na agenda de
+amanhã.
 
 Cinco resultados observáveis por participante:
 
-1. Sabe qual passagem do pipeline está incompleta na realidade dele (autodiagnóstico).
+1. Sabe qual passagem do pipeline está incompleta na realidade dele.
 2. Registrou esse diagnóstico no formulário — vira dado para a Sinapsy.
-3. Tem um Plano de 30 dias escrito, com evidência e com alguém que cobra.
+3. Tem um Plano de 30 dias escrito à mão, com evidência e com alguém que cobra.
 4. Assumiu um compromisso executável em 24 horas.
 5. Avaliou o treinamento.
 
-Vale notar o ciclo: o QR de avaliação **desta** apresentação alimenta o relatório que estamos usando como referência de design. O sistema visual fecha em si mesmo.
+A divisão de papéis entre papel e QR é limpa e vale ser explorada no design:
+**o papel é o que o líder guarda; o formulário é o que a Sinapsy mede.**
+
+O ciclo fecha em si mesmo — o QR de avaliação deste material alimenta o relatório que
+estamos usando como referência de design.
 
 ---
 
@@ -29,89 +43,101 @@ Vale notar o ciclo: o QR de avaliação **desta** apresentação alimenta o rela
 
 - A sequência está certa: diagnosticar → planejar → comprometer → avaliar.
 - As 6 afirmações do autodiagnóstico são curtas, comportamentais e em primeira pessoa.
-- Parar / Começar / Continuar / Evidência / Apoio é um bom quadro. "Evidência" e "Apoio" são justamente o que transforma plano em hábito.
+- Parar / Começar / Continuar / Evidência / Apoio é um bom quadro. "Evidência" e "Apoio"
+  são o que transforma plano em hábito.
 - As notas do apresentador existem e são boas.
 
 ### Trava
 
-| # | Problema | Efeito |
+| # | Problema | Efeito no papel |
 |---|---|---|
-| 1 | A escada `EU → OUTROS → LÍDERES → FUNÇÃO` aparece na capa e nunca é explicada | O modelo inteiro vira decoração |
-| 2 | Não existe ponte entre diagnóstico e plano. A instrução crítica — *pegue as duas menores notas e classifique a lacuna em habilidade, tempo ou valor* — está escondida nas notas do apresentador | O participante pula do "notei" para o "planejo" sem saber o que planejar |
-| 3 | O QR do autodiagnóstico ocupa um slide inteiro repetindo o título do anterior, sem instrução do que responder | Tela vazia no momento em que o grupo mais precisa de direção |
-| 4 | Não há espaço real para escrever: as barras do Plano de 30 dias são decorativas | Projetado, ninguém escreve; impresso, a altura não comporta uma frase |
-| 5 | Rodapé numera 14 e 15 num arquivo de 6 slides; 2 slides sem rodapé | Sinal de recorte de um deck maior (ver Decisão 1) |
-| 6 | O slide 5 acumula dois papéis: exercício das 24h **e** encerramento | Falta um fechamento de verdade — que é o que o áudio 2 pede |
-| 7 | Calibri e cinza-azulado `#5C6973` | Destoa da paleta quente da referência; hierarquia rasa |
-| 8 | Alvos de clique de 0,40in (≈38px) sem estado; `#5C6973` sobre creme dá 4,56:1 | Interação frágil e contraste no limite do AA |
-| 9 | "Qr Code" escrito assim, duas vezes | Correção ortográfica — não conta como mudança de conteúdo |
+| 1 | Foi desenhado como slide 16:9, não como folha de exercício | Em A4 retrato nada aproveita a altura; os campos ficam achatados |
+| 2 | **Não há espaço real para escrever.** As barras do Plano de 30 dias têm 14mm de altura e nenhuma pauta | Ninguém escreve uma frase ali. O exercício central do material não funciona |
+| 3 | A escada `EU → OUTROS → LÍDERES → FUNÇÃO` aparece na capa e nunca é explicada | O modelo inteiro vira decoração |
+| 4 | Não existe ponte entre diagnóstico e plano. A instrução crítica — *pegue as duas menores notas e classifique a lacuna em habilidade, tempo ou valor* — está só nas notas do apresentador | Num material impresso, nota de apresentador não existe. O participante nunca vê |
+| 5 | O QR do autodiagnóstico ocupa uma folha inteira só com o código | Desperdiça uma folha e tira o QR do contexto do exercício |
+| 6 | Os QRs não têm a URL em texto | Se a câmera falhar, acabou. Papel não tem link clicável |
+| 7 | O slide 5 acumula dois papéis: exercício das 24h e encerramento | Falta um fechamento de verdade — que é o que o áudio 2 pede |
+| 8 | Calibri e cinza-azulado `#5C6973` | Destoa da paleta quente da referência e some na impressão |
+| 9 | Os círculos 1–5 têm 10mm e ficam colados | Difícil circular a caneta sem invadir o vizinho |
+| 10 | "Qr Code" escrito assim, duas vezes | Correção ortográfica — não conta como mudança de conteúdo |
 
 ---
 
-## 3. Decisão de formato
+## 3. Decisões de formato
 
-**reveal.js + GitHub Pages**, igual à referência. Três motivos:
+| Item | Definição |
+|---|---|
+| Página | A4 retrato, 210 × 297 mm |
+| Margens | 18 mm, sem sangria — blocos coloridos não encostam na borda, para rodar em impressora comum |
+| Cor | RGB para impressão de escritório. Se for para gráfica, converto para CMYK (o `#F8471E` perde brilho em CMYK e precisa de ajuste) |
+| Fontes | Sora 800 e Inter, embutidas no PDF |
+| Produção | HTML + CSS de impressão → PDF pelo Chrome headless. Mesmo código-fonte da referência |
+| Paginação | Múltiplo de 4, para fechar certo em frente-e-verso e em caderno grampeado |
 
-- Mesmo sistema visual, mesmo repositório, mesmo fluxo de publicação que já funciona.
-- Roda projetado (facilitador), no celular (participante) e imprime (workbook).
-- É a única opção em que os campos de resposta podem ser interativos de verdade.
+### A regra de paginação que organiza tudo
 
-O mesmo arquivo serve três modos:
+Impresso frente e verso, as páginas que ficam **lado a lado** com o caderno aberto são
+as pares com as ímpares seguintes: (2,3), (4,5), (6,7)…
 
-| Modo | Como | Para quem |
-|---|---|---|
-| Projeção | padrão | facilitador conduz |
-| Participante | abre o link no celular, preenche, salva no navegador, baixa o próprio plano | cada líder |
-| Impressão | `?print-pdf` + `@media print` | workbook A4 paisagem com pauta de verdade |
+Então toda **instrução vai em página par** e o **exercício correspondente na ímpar
+seguinte**. O participante lê a instrução e escreve sem precisar virar folha. Isso
+resolve sozinho metade do problema de usabilidade do material.
 
 ---
 
-## 4. Arquitetura de slides
+## 4. Arquitetura das páginas
 
-### V1 — Fiel
+### V1 — Fiel · 8 páginas (4 folhas)
 
-Regra: **nenhuma palavra de conteúdo muda.** Permitido: ortografia e acentuação, reposicionar, dividir um slide em dois, e promover nota do apresentador para a Notes View do reveal (tecla `S`).
+Regra: **nenhuma palavra de conteúdo muda.** Vale corrigir ortografia, reposicionar
+elementos, fundir ou dividir páginas, e trazer para a folha o que estava só nas notas
+do apresentador quando for texto que já existe.
 
-| # | Slide | Origem |
+| Pág | Conteúdo | Origem |
 |---|---|---|
-| 1 | Capa — badge AGEO + Sinapsy, eyebrow, título, barra laranja, subtítulo, chips. A escada ganha tratamento em SVG (degraus ascendentes), não 4 pílulas empilhadas | original s1 |
-| 2 | Autodiagnóstico — 6 afirmações, escala 1–5 interativa, contador "0 / 6" | original s2 |
-| 3 | QR do autodiagnóstico — QR grande + URL legível + o que responder + tempo estimado | original s3 |
-| 4 | **Como preencher o Plano de 30 Dias** — método à esquerda, cartões de exemplo (Comunicação / Delegação) à direita | `conteudo_novo` bloco 1 |
-| 5 | Plano de 30 dias — 5 linhas com campo de escrita real | original s4 |
-| 6 | **Como fazer o compromisso de 24h** — os 3 passos numerados | `conteudo_novo` bloco 2 |
-| 7 | Compromisso 24h — 3 cartões com campo + faixa "uma ação nas próximas 24 horas" | original s5 |
-| 8 | QR da avaliação — mesmo tratamento do slide 3 | original s6 |
-| 9 | **Encerramento** — "Obrigada!" + mensagem de boa sorte, espelhando a página 9 da referência | áudio 2 |
+| 1 | **Capa** — selo AGEO + Sinapsy, título, barra laranja, subtítulo, faixa "Treinamento prático • material editável" | original s1 |
+| 2 | **A escada** — `EU → OUTROS → LÍDERES → FUNÇÃO` em diagrama grande, sai da capa e ganha a folha | original s1 (relocado) |
+| 3 | **Autodiagnóstico** — 6 afirmações, escala 1–5 para circular, e o QR do formulário no rodapé com a URL em texto | original s2 + s3 (fundidos) |
+| 4 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
+| 5 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com pauta | original s4 |
+| 6 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
+| 7 | **Compromisso de 24 horas** ← exercício, folha limpa, 3 blocos com pauta | original s5 |
+| 8 | **Avaliação + Encerramento** — QR da avaliação em cima, "Obrigada!" com a foto da equipe embaixo | original s6 + áudio 2 |
 
-**9 slides.**
+Pares que ficam lado a lado: (2,3) escada e diagnóstico · (4,5) instrução e plano ·
+(6,7) instrução e compromisso. Os dois exercícios ficam com a folha inteira.
 
-### V2 — Autoral
+### V2 — Autoral · 12 páginas (6 folhas)
 
 Mantém todo o conteúdo original e acrescenta o que falta para o argumento fechar.
 
-| # | Slide | Status |
+| Pág | Conteúdo | Status |
 |---|---|---|
 | 1 | Capa | = V1 |
-| 2 | **A escada: o que muda a cada passagem** — desenvolve `EU → OUTROS → LÍDERES → FUNÇÃO` e os três eixos que já estão no subtítulo da capa (habilidades, uso do tempo, valores profissionais) | novo · resolve o problema 1 |
-| 3 | Autodiagnóstico — cada afirmação marcada com o degrau que ela testa | = V1 + marcação |
-| 4 | **Como ler sua nota** — duas menores notas; a lacuna é de habilidade, tempo ou valor? | novo · resolve o problema 2. É o slide que faz o diagnóstico virar plano |
-| 5 | QR do autodiagnóstico | = V1 |
-| 6 | Como preencher o Plano de 30 Dias | = V1 |
-| 7 | Plano de 30 dias | = V1 |
-| 8 | Como fazer o compromisso de 24h | = V1 |
-| 9 | Compromisso 24h | = V1 |
-| 10 | **O que acontece depois** — combinado de acompanhamento: quem cobra, quando, como | novo · dá sobrevida ao plano |
+| 2 | **A escada: o que muda a cada passagem** — desenvolve os três eixos que já estão no subtítulo da capa e nunca aparecem: habilidades, uso do tempo, valores profissionais | novo · resolve o problema 3 |
+| 3 | Autodiagnóstico — cada item marcado com o degrau que testa | = V1 + marcação |
+| 4 | **Como ler sua nota** — duas menores notas; a lacuna é de habilidade, tempo ou valor? | novo · resolve o problema 4. É a página que faz o diagnóstico virar plano |
+| 5 | QR do autodiagnóstico, com espaço próprio | separado da p.3 |
+| 6 | Instrução — Plano de 30 Dias | = V1 |
+| 7 | Plano de 30 Dias ← exercício | = V1 |
+| 8 | Instrução — compromisso de 24 horas | = V1 |
+| 9 | Compromisso de 24 horas ← exercício | = V1 |
+| 10 | **O que acontece depois** — o combinado de acompanhamento: quem cobra, quando, como | novo · dá sobrevida ao plano |
 | 11 | QR da avaliação | = V1 |
-| 12 | Encerramento | = V1 |
+| 12 | **Encerramento** — "Obrigada!", foto da equipe, referência bibliográfica | = V1 |
 
-**12 slides.** Toda copy nova passa por `/humanizer` antes de entrar.
+Todos os pares lado a lado funcionam: (2,3) escada e diagnóstico · (4,5) leitura da nota
+e registro no formulário · (6,7) e (8,9) instrução e exercício · (10,11) acompanhamento
+e avaliação.
+
+Toda copy nova passa por `/humanizer` antes de entrar.
 
 ---
 
 ## 5. Design
 
-### Tokens (herdados de `styles.css`, sem reinventar)
+### Tokens, herdados de `styles.css`
 
 ```
 --ink       #1F1F1F    --cream     #EAE7DC    --orange  #F8471E
@@ -119,60 +145,71 @@ Mantém todo o conteúdo original e acrescenta o que falta para o argumento fech
 --card      #FFFFFF    --dark      #22231C    --blue    #2441CB
 ```
 
-Sora 800 nos títulos, Inter no texto. Canvas 1280×760.
+Sora 800 nos títulos, Inter no texto.
 
-### Componentes novos
+### Ajustes obrigatórios para papel
 
-Mesma gramática da referência: cartão branco, raio 16–20px, sombra suave, borda-topo colorida.
-
-- `.escada` — SVG dos 4 degraus
-- `.likert` — escala 1–5 acessível
-- `.campo` — textarea que cresce, com pauta na impressão
-- `.qr-action` — QR + URL + microcopy
-- `.exemplo` — cartão de exemplo com tag de categoria
-- `.timer` — cronômetro do facilitador (opcional)
+- **O fundo creme não pode cobrir a folha inteira.** Chapar `#EAE7DC` em 8 páginas gasta
+  tinta, encarece e sai manchado em impressora comum. O creme fica em faixas e cartões;
+  o corpo da página é branco do papel.
+- Corpo de texto em `#1F1F1F` sobre branco. Nada de cinza claro.
+- `#5C6973` sobre creme dá **4,56:1**. Troca por `--ink-soft #56544C`, que dá **6,13:1**.
+- Branco sobre laranja dá **3,55:1** — só em texto grande, nunca em corpo de texto. A
+  referência faz isso na página 8; não vamos repetir.
+- Blocos escuros (`--dark`) no máximo em duas páginas, e nunca nas de escrever.
 
 ### Cor por bloco
-
-Evita monotonia e dá orientação dentro do deck.
 
 | Bloco | Cor |
 |---|---|
 | Diagnóstico | laranja |
 | Plano de 30 dias | azul |
-| Compromisso 24h | amarelo sobre dark |
-| Avaliação e encerramento | creme + foto |
-
-### Acessibilidade
-
-- `#5C6973` sobre creme dá **4,56:1**. Troca por `--ink-soft #56544C` → **6,13:1**.
-- Branco sobre laranja dá **3,55:1** — só para texto grande, nunca para corpo de texto. A referência faz isso na página 8; não vamos repetir.
-- Alvos de toque ≥ 44px. Foco visível. Escala 1–5 como `radiogroup` navegável por seta.
-- `prefers-reduced-motion` respeitado.
+| Compromisso 24h | amarelo com âncora escura |
+| Avaliação e encerramento | creme |
 
 ---
 
-## 6. Interação
+## 6. A experiência de preencher
 
-1. **Escala 1–5** — `role="radiogroup"`, setas ←→, alvo de 48px, preenchimento laranja, estado salvo. Contador de progresso. Ao completar as 6, aparece discretamente *"suas duas menores: itens X e Y"*, que é exatamente a ponte para o plano.
-2. **Campos de escrita** — textarea auto-grow, placeholder com exemplo concreto ("Ex.: parar de revisar cada proposta antes de enviar"), salvo em `localStorage`, sem login.
-3. **Botão "Baixar meu plano"** — junta autodiagnóstico + 30 dias + 24h num arquivo. É o que faz o líder não perder o que escreveu.
-4. **QR** — regerar em alta resolução com o logo Sinapsy, mais a URL em texto e link clicável no celular:
-   - autodiagnóstico → `https://form.respondi.app/xd7sBWfV`
-   - avaliação → `https://form.respondi.app/3VutxWx6`
+É aqui que o material ganha ou perde. Especificações concretas:
 
-   (extraídos dos QRs do pptx; confirmar antes de publicar)
-5. **Impressão** — `@media print`: pauta real em três alturas, círculos 1–5 vazados, QR em preto puro, sem sombra.
-6. **Facilitador** — notas na tecla `S`; timer opcional de 10 min no slide do plano.
+**Pauta.** Linha de escrita a cada **9 mm**, em `rgba(31,31,31,.18)` — visível para guiar,
+discreta o bastante para não competir com a caneta. Nunca uma caixa vazia sem pauta:
+sem linha, a pessoa escreve torto e desiste no meio.
+
+**Plano de 30 Dias — página inteira.** Cabeçalho enxuto (~45 mm), sobram ~215 mm para
+5 blocos de ~43 mm: tag da categoria, a pergunta e **2 linhas** de escrita cada.
+
+**Compromisso de 24 horas — página inteira.** 3 blocos de ~70 mm, com **4 linhas** cada.
+São as respostas que mais importam e as que o original mais aperta.
+
+**Escala 1–5.** Círculos de **9 mm** de diâmetro com **7 mm** entre eles, alinhados à
+direita da afirmação, com cabeçalho "1 raramente … 5 consistentemente" uma vez no topo
+em vez de repetido em cada linha. Traço de 1pt, vazado — feito para circular a caneta.
+
+**QR code.** **38 mm** de lado, correção de erro alta por causa do logo Sinapsy no centro,
+preto puro sobre branco (nada de laranja: reduz o contraste de leitura). Sempre com a
+**URL em texto logo abaixo** — no papel não existe link clicável e câmera falha.
+
+- autodiagnóstico → `https://form.respondi.app/xd7sBWfV`
+- avaliação → `https://form.respondi.app/3VutxWx6`
+
+Extraí os dois destinos decodificando os QRs do pptx. Confirmar antes de gerar o PDF.
+
+**Identificação.** Proponho uma linha de **Nome e Data** na capa. É a única adição que eu
+faria mesmo na V1 — um caderno que é distribuído, preenchido e às vezes recolhido precisa
+disso. Fácil de vetar (ver decisão 3).
 
 ---
 
 ## 7. Conteúdo
 
 - **V1:** texto intocado. Só ortografia ("Qr Code" → "QR Code") e quebras de linha.
-- O bloco 2 do `conteudo_novo.txt` aparece **duplicado** no arquivo, duas vezes e idêntico. Tratado como duplicata — usar uma vez (ver Decisão 5).
-- **V2:** copy nova só nos 3 slides adicionados e na microcopy dos campos.
-- A referência bibliográfica (Charan, Drotter e Noel) sai do rodapé de um slide só e passa a ter um lugar fixo e discreto.
+- `conteudo_novo.txt` confirmado: bloco 1 = instrução da atividade 1, bloco 2 = instrução
+  da atividade 2. O terceiro bloco é cópia idêntica do segundo — descartado.
+- **V2:** copy nova só nas 3 páginas adicionadas.
+- A referência bibliográfica (Charan, Drotter e Noel) sai do rodapé de uma página só e
+  ganha lugar fixo no encerramento.
 
 ---
 
@@ -180,21 +217,19 @@ Evita monotonia e dá orientação dentro do deck.
 
 | Momento | Skill | Por quê |
 |---|---|---|
-| Qualquer copy nova — V2, microcopy, placeholders, encerramento | `/humanizer` | tirar a cara de IA: contraste "não X, mas Y", tríades forçadas, frase de efeito no fim |
+| Toda copy nova — V2, microcopy, encerramento | `/humanizer` | tirar a cara de IA: contraste "não X, mas Y", tríades forçadas, frase de efeito no fim |
 | Segunda passada, se sobrar padrão | `stop-slop` | complementa o humanizer. Não rodar os dois no mesmo trecho sem ler o resultado |
-| Antes de publicar qualquer preview | `artifact-design` | calibrar o investimento de design do artifact |
-| Escada do pipeline em SVG | `artifact-diagramming` | diagrama que mostra mecanismo e sobrevive a light/dark |
-| Formalizar os tokens | `design-system` | virar token set reaproveitável nos próximos materiais da Sinapsy |
-| Revisão de UI/UX, tipografia, alvos, estados | `ui-ux-pro-max` | checklist de guidelines e padrões de interação |
-| Polimento final de frontend | `impeccable` | hierarquia, carga cognitiva, estados vazios e de erro |
-| Micro-interações da escala e dos campos | `emil-design-eng` | foco, hover, transição — o que faz parecer software bem feito |
-| Se entrar gráfico (ex.: perfil do autodiagnóstico) | `dataviz` | forma e paleta corretas antes de escrever código de gráfico |
-| Se precisar entregar `.pptx` | `pptx` | ler o original e gerar versão PowerPoint |
-| Workbook impresso | `pdf` | PDF final, merge, forms |
-| Antes do commit final | `/code-review` + `/simplify` | HTML e CSS limpos antes de publicar |
-| Stress-test da estrutura da V2 | `grilling` | furar o próprio argumento antes de mostrar para a cliente |
+| Diagrama da escada | `artifact-diagramming` | o SVG dos 4 degraus tem que mostrar mecanismo, não enfeitar |
+| Formalizar os tokens | `design-system` | vira token set reaproveitável nos próximos materiais da Sinapsy |
+| Legibilidade, hierarquia, escala tipográfica | `ui-ux-pro-max` | as guidelines valem igual no papel: medida de linha, peso, espaçamento |
+| Geração e fechamento do PDF | `pdf` | A4, fontes embutidas, junção das páginas, verificação |
+| Alternativa de produção | `opendesign-pdf` | se o caminho Chrome headless der problema com fonte ou quebra de página |
+| Preview para você aprovar | `artifact-design` | cada versão vira uma página de aprovação antes de virar PDF |
+| Auditoria antes de fechar | `impeccable` | hierarquia e carga cognitiva página a página |
+| Antes de mostrar a V2 | `grilling` | furar o próprio argumento da V2 antes de a cliente furar |
 
-Fora de skills: Browser pane para QA visual em 1280×760 e no mobile; Artifact para aprovação antes de commitar.
+Saíram do plano por causa da mudança de formato: `pptx`, `dataviz`, `emil-design-eng`
+e tudo que dependia de interação em tela.
 
 ---
 
@@ -202,20 +237,27 @@ Fora de skills: Browser pane para QA visual em 1280×760 e no mobile; Artifact p
 
 | Fase | Entrega |
 |---|---|
-| 0 | Estrutura no repo + este planejamento ✅ |
-| 1 | Assets: QRs em alta, badge AGEO, logo Sinapsy, foto |
-| 2 | `shared/tokens.css` + componentes novos |
-| 3 | V1 completa → preview → aprovação |
-| 4 | V2 (copy nova via `/humanizer`) → preview → aprovação |
-| 5 | QA (impressão, mobile, teclado, contraste), code-review, publicação no Pages, PDFs |
+| 0 | Estrutura no repositório e este planejamento ✅ |
+| 1 | Assets — QRs em 38 mm/300dpi, selo AGEO, logo Sinapsy, `equipe.jpeg` tratada |
+| 2 | `shared/tokens.css` e `shared/print.css` — grade A4, pauta, componentes |
+| 3 | V1 completa → PDF de prova → sua aprovação |
+| 4 | V2, com a copy nova passando pelo humanizer → PDF de prova → aprovação |
+| 5 | Teste de impressão real (uma folha de cada tipo), ajuste de margem e tinta, PDFs finais |
+
+**A fase 5 não é opcional.** Material impresso só está pronto depois de sair de uma
+impressora de verdade. Cor na tela mente.
 
 ---
 
 ## 10. Decisões pendentes
 
-1. **Esses 6 slides são o treinamento inteiro ou um recorte?** O rodapé numera 14 e 15. Se existe um deck maior, preciso dele — senão a V2 vai propor slides que já existem lá.
-2. **Formato de entrega:** site no Pages + PDF resolve? Precisa de `.pptx` editável também?
-3. **Foto do encerramento:** uso a `equipe.jpeg` que já está no repo ou tem foto nova deste treinamento?
-4. **Dados preenchidos:** ficam só no navegador do participante (privado, some se ele limpar os dados) ou também precisam chegar em algum lugar?
-5. **O bloco repetido do `conteudo_novo.txt` é duplicata mesmo?**
-6. **Este repositório é público.** O relatório do PDL já está publicado nele. Confirmar que o material de treinamento da AGEO também pode ficar público.
+1. **As duas URLs dos formulários estão certas?** Decodifiquei dos QRs do pptx:
+   `form.respondi.app/xd7sBWfV` no autodiagnóstico e `form.respondi.app/3VutxWx6` na
+   avaliação. Se os formulários mudaram, preciso dos links novos.
+2. **Frente e verso ou só frente?** Estou desenhando para frente e verso — é o que faz a
+   instrução ficar ao lado do exercício. Se for só frente, a lógica de paginação muda.
+3. **Linha de Nome e Data na capa?** É adição de conteúdo, então precisa do seu aval para
+   entrar na V1.
+4. **Impressora de escritório ou gráfica?** Muda sangria e conversão de cor.
+5. **Este repositório é público.** O relatório do PDL já está lá. Confirma que o material
+   de treinamento da AGEO também pode ficar.
