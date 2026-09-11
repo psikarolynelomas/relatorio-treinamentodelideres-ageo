@@ -8,7 +8,7 @@ do relatório do PDL.
 | **Entrega** | PDF A4 retrato, impressão colorida, **só frente** |
 | **Uso** | Impresso e distribuído aos participantes |
 | **Interação** | Papel e caneta nos exercícios · QR code nos formulários |
-| **Versões** | V1 fiel (7 folhas) · V2 autoral (10 folhas) |
+| **Versões** | V1 fiel (6 folhas) · V2 autoral (a rever) |
 | **Impressão** | Impressora de escritório |
 | **Fonte de design** | `index.html` e `styles.css` na raiz do repositório |
 | **Fonte de conteúdo** | `apresentacao_original.pptx` + `conteudo_novo.txt` + áudios |
@@ -81,8 +81,8 @@ estamos usando como referência de design.
 
 Sem frente e verso, duas coisas passam a valer:
 
-**1. Cada página custa uma folha.** Sete folhas coloridas por participante, onze
-participantes: 77 folhas. Toda página tem que justificar a própria existência. Por isso
+**1. Cada página custa uma folha.** Seis folhas coloridas por participante, onze
+participantes: 66 folhas. Toda página tem que justificar a própria existência. Por isso
 o QR do autodiagnóstico, que hoje tem folha própria, volta para o pé da página do
 exercício, e a escada vira uma faixa no topo do autodiagnóstico em vez de pedir
 folha só para ela.
@@ -90,7 +90,7 @@ folha só para ela.
 **2. Cada folha precisa funcionar sozinha.** Folha solta se embaralha, cai, é separada
 do resto. Então:
 
-- rodapé em toda página, com o nome do material e `pág. X / 7` — o original já tem esse
+- rodapé em toda página, com o nome do material e `pág. X / 6` — o original já tem esse
   elemento, só está com o número errado;
 - as páginas de exercício carregam a própria pergunta em cada bloco, para o participante
   não precisar voltar na folha de instrução. O original já faz isso e vamos preservar.
@@ -99,7 +99,7 @@ do resto. Então:
 rascunhar ali antes de passar a limpo, sem nenhum custo adicional de impressão.
 
 **Se precisar cortar custo:** dobrar as instruções no topo das páginas de exercício leva
-o material de 7 para 5 folhas. Não é o que você pediu no áudio — você falou em "a
+o material de 6 para 4 folhas. Não é o que você pediu no áudio — você falou em "a
 instrução e o exercício" separados — então mantive separado. Fica registrado como
 alavanca, se a conta apertar.
 
@@ -107,7 +107,7 @@ alavanca, se a conta apertar.
 
 ## 4. Arquitetura das páginas
 
-### V1 — Fiel · 7 folhas
+### V1 — Fiel · 6 folhas
 
 Regra: **nenhuma palavra de conteúdo muda.** Vale corrigir ortografia, reposicionar
 elementos, fundir páginas, e trazer para a folha o que estava só nas notas do
@@ -115,34 +115,33 @@ apresentador quando for texto que já existe.
 
 | Pág | Conteúdo | Origem |
 |---|---|---|
-| 1 | **Capa** — painel creme recuado, anel laranja no alto, disco amarelo embaixo, selo AGEO + Sinapsy, título, barra laranja, subtítulo, assinatura "Treinamento prático" | original s1 · **pronta** |
-| 2 | **Autodiagnóstico** — faixa da escada no topo, 6 afirmações, escala 1–5 para circular, e o QR do formulário no pé com a URL em texto | original s1 + s2 + s3 |
-| 3 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
-| 4 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com pauta | original s4 |
-| 5 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
-| 6 | **Compromisso de 24 horas** ← exercício, folha limpa, 3 blocos com pauta | original s5 |
-| 7 | **Avaliação + Encerramento** — QR da avaliação em cima, "Obrigada!" com a foto da equipe embaixo | original s6 + áudio 2 |
+| 1 | **Capa** — painel creme recuado, anel laranja no alto, disco amarelo embaixo, selo AGEO + Sinapsy, título, barra laranja, subtítulo, assinatura "Treinamento prático" | original s1 |
+| 2 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
+| 3 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com 3 linhas de pauta | original s4 |
+| 4 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
+| 5 | **Compromisso de 24 horas** ← exercício, folha limpa, 3 blocos com 5 linhas de pauta | original s5 |
+| 6 | **Encerramento** — selo, barra laranja e a mensagem de fechamento, centralizados | áudio 2 · texto da cliente |
 
-Duas folhas a menos que na versão anterior deste plano, e nenhuma perda de conteúdo:
-o QR volta para o pé do exercício que ele registra, e a escada entra como faixa no
-topo do autodiagnóstico.
+**Cortes decididos pela cliente na revisão:** saiu a página do autodiagnóstico
+(original s2 + s3) e saiu o bloco de avaliação da última página (original s6). Com
+eles foram embora os dois QR codes e a escada `EU → OUTROS → LÍDERES → FUNÇÃO`, que
+não aparece mais em lugar nenhum do material. O workbook passa a ser só as duas
+atividades escritas, com instrução e exercício cada.
 
 **A capa está pronta e aprovada.** Direção escolhida: painel creme recuado 12 mm da
 borda do papel, com o anel laranja sangrando pela borda do *painel*. Impressora de
 escritório não imprime até o corte, então a margem branca deixa de ser defeito e
 passa a ser moldura.
 
-**Onde ficou a escada.** Fora da capa, por decisão da cliente. Na V1 ela entra como
-faixa horizontal no topo da página do autodiagnóstico — e ali ela trabalha, porque as
-6 afirmações testam degraus diferentes. Custo: zero folha extra. Na V2 continua com
-página própria e explicada.
-
-**Remoções autorizadas no texto da V1.** Duas, ambas a pedido da cliente:
+**Mudanças autorizadas no texto da V1.** Todas a pedido da cliente:
 
 1. A assinatura da capa perdeu o "• material editável" — informação interna, e o
    participante recebe o material já impresso.
-2. Saiu do rodapé da última página o "Base: Pipeline da Liderança — Ram Charan,
-   Stephen Drotter e James Noel".
+2. Saiu do rodapé o "Base: Pipeline da Liderança — Ram Charan, Stephen Drotter e
+   James Noel".
+3. Saíram as páginas do autodiagnóstico e do bloco de avaliação.
+4. O texto de encerramento é da cliente: "Muito sucesso na aplicação prática deste
+   aprendizado e excelente trabalho a todos!"
 
 Fora isso, nenhuma palavra do original mudou.
 
@@ -181,7 +180,7 @@ Sora 800 nos títulos, Inter no texto.
 
 ### Ajustes obrigatórios para papel
 
-- **O fundo creme não pode cobrir a folha inteira.** Chapar `#EAE7DC` em 7 páginas gasta
+- **O fundo creme não pode cobrir a folha inteira.** Chapar `#EAE7DC` em 6 páginas gasta
   tinta, encarece e sai manchado em impressora de escritório. O creme fica em faixas e
   cartões; o corpo da página é o branco do papel.
 - Corpo de texto em `#1F1F1F` sobre branco. Nada de cinza claro.

@@ -387,9 +387,16 @@ strong { font-weight: 600; }
 
 .divisor { height: .4mm; background: var(--filete); margin: 9mm 0; }
 
-.encerramento { margin: auto 0; max-width: 130mm; }
-.encerramento .selo { height: 22mm; width: auto; display: block; margin-bottom: 6mm; }
-.encerramento .barra { width: 22mm; height: 1.5mm; background: var(--orange); border-radius: 1mm; margin: 0 0 6mm; }
+.encerramento {
+  margin: auto;
+  max-width: 138mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.encerramento .selo { height: 30mm; width: auto; display: block; margin-bottom: 8mm; }
+.encerramento .barra { width: 22mm; height: 1.5mm; background: var(--orange); border-radius: 1mm; margin-bottom: 8mm; }
 .encerramento .obrigada {
   font-family: var(--display);
   font-weight: 800;
@@ -399,13 +406,19 @@ strong { font-weight: 600; }
   color: var(--ink);
   margin: 0 0 5mm;
 }
-.encerramento .msg { font-size: 4.6mm; line-height: 1.55; color: var(--ink-soft); }
-.encerramento .msg p { margin-bottom: 4mm; }
-.encerramento .selo { height: 24mm; }
+.encerramento .msg {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 7mm;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  color: var(--ink);
+  margin: 0;
+}
 
 .assinatura-final {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
   padding-top: 7mm;
   border-top: .3mm solid var(--filete);
 }
