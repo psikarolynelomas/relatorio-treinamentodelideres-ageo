@@ -1,0 +1,211 @@
+/* ============================================================
+   Pipeline da Liderança — AGEO · Sinapsy
+   Grade A4 e componentes do workbook impresso.
+   A4 retrato · só frente · impressora de escritório (sem sangria)
+   ============================================================ */
+
+@page { size: A4 portrait; margin: 0; }
+
+html, body { margin: 0; padding: 0; background: #fff; }
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ---------- a folha ---------- */
+.folha {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  page-break-after: always;
+  font-family: var(--texto);
+  font-size: var(--t-corpo);
+  line-height: 1.5;
+  color: var(--ink);
+}
+.folha:last-child { page-break-after: auto; }
+
+/* área de trabalho dentro das margens */
+.area {
+  position: absolute;
+  inset: var(--margem);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- rodapé de identificação ----------
+   Folha solta se embaralha. Toda página se identifica. */
+.rodape {
+  position: absolute;
+  left: var(--margem);
+  right: var(--margem);
+  bottom: 10mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--t-rodape);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.rodape .pag { font-variant-numeric: tabular-nums; }
+
+/* ---------- cabeçalho de página de conteúdo ---------- */
+.eyebrow {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--t-eyebrow);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+.titulo-pagina {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: var(--t-titulo);
+  letter-spacing: -.025em;
+  line-height: 1.02;
+  color: var(--ink);
+  margin: 2.5mm 0 0;
+}
+.lead {
+  font-size: var(--t-corpo);
+  color: var(--ink-soft);
+  margin: 3mm 0 0;
+  max-width: 150mm;
+}
+.regua { height: .4mm; background: var(--filete); margin: 5mm 0 0; }
+
+/* ---------- pauta de escrita ----------
+   Linha a cada 9 mm. Sem linha, a pessoa escreve torto e desiste no meio. */
+.pauta {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--linha) - .3mm),
+    var(--pauta) calc(var(--linha) - .3mm),
+    var(--pauta) var(--linha)
+  );
+  background-position: 0 0;
+}
+.pauta-2 { height: calc(var(--linha) * 2); }
+.pauta-3 { height: calc(var(--linha) * 3); }
+.pauta-4 { height: calc(var(--linha) * 4); }
+.pauta-5 { height: calc(var(--linha) * 5); }
+
+/* ---------- escala 1 a 5 ----------
+   Círculo de 9 mm com 7 mm de folga: dá para circular a caneta
+   sem invadir o vizinho. */
+.escala { display: flex; gap: 7mm; align-items: center; }
+.escala .ponto {
+  width: 9mm;
+  height: 9mm;
+  border: .35mm solid var(--ink-soft);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 3.2mm;
+  color: var(--ink-soft);
+}
+
+/* ---------- QR ----------
+   38 mm, sobre branco puro. Laranja atrás reduz o contraste de leitura.
+   Nunca sem a URL em texto: no papel não existe link clicável. */
+.qr-bloco { display: flex; align-items: center; gap: 7mm; }
+.qr-bloco img { width: 38mm; height: 38mm; display: block; }
+.qr-url {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: var(--t-pequeno);
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+
+/* ============================================================
+   CAPA
+   O painel creme é recuado 12 mm da borda do papel. Impressora de
+   escritório não imprime até o corte, então o anel sangra pela borda
+   do painel, não da folha — e a margem branca vira moldura.
+   ============================================================ */
+.capa .painel {
+  position: absolute;
+  inset: var(--recuo-painel);
+  background: var(--cream);
+  overflow: hidden;
+}
+.capa .conteudo {
+  position: absolute;
+  inset: 0;
+  padding: 15mm 14mm 13mm;
+  display: flex;
+  flex-direction: column;
+}
+.capa .anel {
+  position: absolute;
+  right: -46mm; top: -46mm;
+  width: 142mm; height: 142mm;
+  border-radius: 50%;
+  border: 26mm solid var(--orange);
+}
+.capa .disco {
+  position: absolute;
+  right: -26mm; bottom: -30mm;
+  width: 86mm; height: 86mm;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+.capa .logos {
+  display: flex;
+  align-items: center;
+  gap: 6mm;
+  margin-bottom: 52mm;
+  position: relative;
+  z-index: 4;
+}
+.capa .badge { height: 23mm; width: auto; display: block; }
+.capa .sep { width: .5mm; height: 11mm; background: rgba(31,31,31,.2); }
+.capa .sinapsy { height: 7mm; width: auto; display: block; }
+
+.capa .bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5mm;
+  position: relative;
+  z-index: 3;
+}
+.capa .titulo {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: var(--t-capa);
+  letter-spacing: -.028em;
+  line-height: .95;
+  color: var(--ink);
+  margin: 0;
+}
+.capa .barra { width: 22mm; height: 1.5mm; background: var(--orange); border-radius: 1mm; }
+.capa .sub {
+  font-size: var(--t-corpo);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 100mm;
+  margin: 0;
+}
+.capa .assinatura {
+  margin-top: auto;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 2.9mm;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  position: relative;
+  z-index: 3;
+}
+
+/* ---------- garante que a cor saia na impressão ---------- */
+@media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

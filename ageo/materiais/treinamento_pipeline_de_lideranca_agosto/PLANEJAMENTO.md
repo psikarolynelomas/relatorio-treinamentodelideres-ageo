@@ -74,7 +74,7 @@ estamos usando como referência de design.
 | Impressão | Só frente. Cada página é uma folha de papel |
 | Margens | 18 mm simétricas, sem sangria. Como não há frente-e-verso, não precisa de margem de lombada — e blocos coloridos não encostam na borda, porque impressora de escritório não imprime até o corte |
 | Cor | RGB. Impressora de escritório varia muito de máquina para máquina, então a prova impressa é obrigatória |
-| Fontes | Sora 800 e Inter, embutidas no PDF |
+| Fontes | Sora 800 e Inter. O Chrome converte para contornos Type3 no PDF, então as letras viajam com o arquivo e imprimem exatas. O PDF da referência foi gerado assim e já rodou em produção |
 | Produção | HTML + CSS de impressão → PDF pelo Chrome headless. Mesmo código-fonte da referência |
 
 ### A regra que organiza tudo agora
@@ -84,7 +84,8 @@ Sem frente e verso, duas coisas passam a valer:
 **1. Cada página custa uma folha.** Sete folhas coloridas por participante, onze
 participantes: 77 folhas. Toda página tem que justificar a própria existência. Por isso
 o QR do autodiagnóstico, que hoje tem folha própria, volta para o pé da página do
-exercício, e a escada volta para a capa — que é onde ela já estava no original.
+exercício, e a escada vira uma faixa no topo do autodiagnóstico em vez de pedir
+folha só para ela.
 
 **2. Cada folha precisa funcionar sozinha.** Folha solta se embaralha, cai, é separada
 do resto. Então:
@@ -114,8 +115,8 @@ apresentador quando for texto que já existe.
 
 | Pág | Conteúdo | Origem |
 |---|---|---|
-| 1 | **Capa** — selo AGEO + Sinapsy, título, barra laranja, subtítulo, a escada `EU → OUTROS → LÍDERES → FUNÇÃO` redesenhada em diagrama, faixa "Treinamento prático • material editável" | original s1 |
-| 2 | **Autodiagnóstico** — 6 afirmações, escala 1–5 para circular, e o QR do formulário no rodapé com a URL em texto | original s2 + s3 (fundidos) |
+| 1 | **Capa** — painel creme recuado, anel laranja no alto, disco amarelo embaixo, selo AGEO + Sinapsy, título, barra laranja, subtítulo, assinatura "Treinamento prático" | original s1 · **pronta** |
+| 2 | **Autodiagnóstico** — faixa da escada no topo, 6 afirmações, escala 1–5 para circular, e o QR do formulário no pé com a URL em texto | original s1 + s2 + s3 |
 | 3 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
 | 4 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com pauta | original s4 |
 | 5 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
@@ -123,7 +124,22 @@ apresentador quando for texto que já existe.
 | 7 | **Avaliação + Encerramento** — QR da avaliação em cima, "Obrigada!" com a foto da equipe embaixo | original s6 + áudio 2 |
 
 Duas folhas a menos que na versão anterior deste plano, e nenhuma perda de conteúdo:
-a escada volta para a capa, e o QR volta para o pé do exercício que ele registra.
+o QR volta para o pé do exercício que ele registra, e a escada entra como faixa no
+topo do autodiagnóstico.
+
+**A capa está pronta e aprovada.** Direção escolhida: painel creme recuado 12 mm da
+borda do papel, com o anel laranja sangrando pela borda do *painel*. Impressora de
+escritório não imprime até o corte, então a margem branca deixa de ser defeito e
+passa a ser moldura.
+
+**Onde ficou a escada.** Fora da capa, por decisão da cliente. Na V1 ela entra como
+faixa horizontal no topo da página do autodiagnóstico — e ali ela trabalha, porque as
+6 afirmações testam degraus diferentes. Custo: zero folha extra. Na V2 continua com
+página própria e explicada.
+
+**Exceção autorizada ao texto da V1.** A assinatura da capa perdeu o "• material
+editável": é informação interna, e o participante recebe o material já impresso. Foi
+a única palavra removida do original.
 
 ### V2 — Autoral · 10 folhas
 
@@ -131,7 +147,7 @@ Mantém todo o conteúdo original e acrescenta o que falta para o argumento fech
 
 | Pág | Conteúdo | Status |
 |---|---|---|
-| 1 | Capa | = V1, com a escada em versão compacta |
+| 1 | Capa | = V1 |
 | 2 | **A escada: o que muda a cada passagem** — desenvolve os três eixos que já estão no subtítulo da capa e nunca aparecem: habilidades, uso do tempo, valores profissionais | novo · resolve o problema 3 |
 | 3 | Autodiagnóstico + QR — cada item marcado com o degrau que testa | = V1 + marcação |
 | 4 | **Como ler sua nota** — duas menores notas; a lacuna é de habilidade, tempo ou valor? | novo · resolve o problema 4. É a página que faz o diagnóstico virar plano |

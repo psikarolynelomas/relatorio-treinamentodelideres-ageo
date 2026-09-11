@@ -1,0 +1,46 @@
+/* ============================================================
+   Pipeline da Liderança — AGEO · Sinapsy
+   Tokens do workbook impresso. Herdados do styles.css do
+   relatório do PDL, com os ajustes que o papel exige.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ---- cor ---- */
+  --ink:            #1F1F1F;
+  --ink-soft:       #56544C;   /* 6,13:1 sobre creme. substitui o #5C6973 do original */
+  --ink-faint:      #8B887C;
+  --cream:          #EAE7DC;
+  --cream-2:        #F3F1E9;
+  --paper:          #FFFFFF;
+  --orange:         #F8471E;
+  --orange-claro:   #F98A3B;
+  --yellow:         #FFDF2C;
+  --blue:           #2441CB;
+  --dark:           #22231C;
+  --bege:           #C9BFA6;
+
+  --pauta:          rgba(31, 31, 31, .18);   /* linha de escrita */
+  --filete:         rgba(31, 31, 31, .14);
+  --filete-fraco:   rgba(31, 31, 31, .08);
+
+  /* ---- tipo ---- */
+  --display:        'Sora', 'Inter', sans-serif;
+  --texto:          'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+  --t-capa:         20mm;    /* título da capa */
+  --t-titulo:        9mm;    /* título de página */
+  --t-bloco:         5mm;    /* título de bloco */
+  --t-corpo:       3.9mm;
+  --t-pequeno:     3.3mm;
+  --t-eyebrow:     3.1mm;
+  --t-rodape:      2.6mm;
+
+  /* ---- grade da folha ---- */
+  --margem:        18mm;     /* simétrica: impressão só frente, sem lombada */
+  --recuo-painel:  12mm;     /* painel creme da capa, recuado da borda do papel */
+  --linha:          9mm;     /* altura de uma linha de escrita à mão */
+  --util-h:       174mm;     /* 210 − 2 × 18 */
+  --util-v:       261mm;     /* 297 − 2 × 18 */
+}
