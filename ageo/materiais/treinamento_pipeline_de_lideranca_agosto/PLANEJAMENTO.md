@@ -5,10 +5,11 @@ do relatório do PDL.
 
 | | |
 |---|---|
-| **Entrega** | PDF A4 retrato, impressão colorida |
+| **Entrega** | PDF A4 retrato, impressão colorida, **só frente** |
 | **Uso** | Impresso e distribuído aos participantes |
 | **Interação** | Papel e caneta nos exercícios · QR code nos formulários |
-| **Versões** | V1 fiel (8 páginas) · V2 autoral (12 páginas) |
+| **Versões** | V1 fiel (7 folhas) · V2 autoral (10 folhas) |
+| **Impressão** | Impressora de escritório |
 | **Fonte de design** | `index.html` e `styles.css` na raiz do repositório |
 | **Fonte de conteúdo** | `apresentacao_original.pptx` + `conteudo_novo.txt` + áudios |
 
@@ -51,16 +52,17 @@ estamos usando como referência de design.
 
 | # | Problema | Efeito no papel |
 |---|---|---|
-| 1 | Foi desenhado como slide 16:9, não como folha de exercício | Em A4 retrato nada aproveita a altura; os campos ficam achatados |
-| 2 | **Não há espaço real para escrever.** As barras do Plano de 30 dias têm 14mm de altura e nenhuma pauta | Ninguém escreve uma frase ali. O exercício central do material não funciona |
+| 1 | **Não há espaço real para escrever.** As barras do Plano de 30 dias têm 14 mm de altura e nenhuma pauta | Ninguém escreve uma frase ali. O exercício central do material não funciona |
+| 2 | Foi desenhado como slide 16:9, não como folha de exercício | Em A4 retrato nada aproveita a altura; os campos ficam achatados |
 | 3 | A escada `EU → OUTROS → LÍDERES → FUNÇÃO` aparece na capa e nunca é explicada | O modelo inteiro vira decoração |
 | 4 | Não existe ponte entre diagnóstico e plano. A instrução crítica — *pegue as duas menores notas e classifique a lacuna em habilidade, tempo ou valor* — está só nas notas do apresentador | Num material impresso, nota de apresentador não existe. O participante nunca vê |
-| 5 | O QR do autodiagnóstico ocupa uma folha inteira só com o código | Desperdiça uma folha e tira o QR do contexto do exercício |
+| 5 | O QR do autodiagnóstico ocupa uma folha inteira só com o código | Numa impressão só frente, isso é uma folha inteira por participante |
 | 6 | Os QRs não têm a URL em texto | Se a câmera falhar, acabou. Papel não tem link clicável |
 | 7 | O slide 5 acumula dois papéis: exercício das 24h e encerramento | Falta um fechamento de verdade — que é o que o áudio 2 pede |
-| 8 | Calibri e cinza-azulado `#5C6973` | Destoa da paleta quente da referência e some na impressão |
-| 9 | Os círculos 1–5 têm 10mm e ficam colados | Difícil circular a caneta sem invadir o vizinho |
-| 10 | "Qr Code" escrito assim, duas vezes | Correção ortográfica — não conta como mudança de conteúdo |
+| 8 | Os círculos 1–5 têm 10 mm e ficam colados | Difícil circular a caneta sem invadir o vizinho |
+| 9 | A numeração de rodapé está quebrada: diz 14 e 15, e duas páginas não têm rodapé | Folhas soltas sem identificação se perdem e se embaralham |
+| 10 | Calibri e cinza-azulado `#5C6973` | Destoa da paleta quente da referência e some na impressão |
+| 11 | "Qr Code" escrito assim, duas vezes | Correção ortográfica — não conta como mudança de conteúdo |
 
 ---
 
@@ -69,67 +71,76 @@ estamos usando como referência de design.
 | Item | Definição |
 |---|---|
 | Página | A4 retrato, 210 × 297 mm |
-| Margens | 18 mm, sem sangria — blocos coloridos não encostam na borda, para rodar em impressora comum |
-| Cor | RGB para impressão de escritório. Se for para gráfica, converto para CMYK (o `#F8471E` perde brilho em CMYK e precisa de ajuste) |
+| Impressão | Só frente. Cada página é uma folha de papel |
+| Margens | 18 mm simétricas, sem sangria. Como não há frente-e-verso, não precisa de margem de lombada — e blocos coloridos não encostam na borda, porque impressora de escritório não imprime até o corte |
+| Cor | RGB. Impressora de escritório varia muito de máquina para máquina, então a prova impressa é obrigatória |
 | Fontes | Sora 800 e Inter, embutidas no PDF |
 | Produção | HTML + CSS de impressão → PDF pelo Chrome headless. Mesmo código-fonte da referência |
-| Paginação | Múltiplo de 4, para fechar certo em frente-e-verso e em caderno grampeado |
 
-### A regra de paginação que organiza tudo
+### A regra que organiza tudo agora
 
-Impresso frente e verso, as páginas que ficam **lado a lado** com o caderno aberto são
-as pares com as ímpares seguintes: (2,3), (4,5), (6,7)…
+Sem frente e verso, duas coisas passam a valer:
 
-Então toda **instrução vai em página par** e o **exercício correspondente na ímpar
-seguinte**. O participante lê a instrução e escreve sem precisar virar folha. Isso
-resolve sozinho metade do problema de usabilidade do material.
+**1. Cada página custa uma folha.** Sete folhas coloridas por participante, onze
+participantes: 77 folhas. Toda página tem que justificar a própria existência. Por isso
+o QR do autodiagnóstico, que hoje tem folha própria, volta para o pé da página do
+exercício, e a escada volta para a capa — que é onde ela já estava no original.
+
+**2. Cada folha precisa funcionar sozinha.** Folha solta se embaralha, cai, é separada
+do resto. Então:
+
+- rodapé em toda página, com o nome do material e `pág. X / 7` — o original já tem esse
+  elemento, só está com o número errado;
+- as páginas de exercício carregam a própria pergunta em cada bloco, para o participante
+  não precisar voltar na folha de instrução. O original já faz isso e vamos preservar.
+
+**Bônus de graça:** o verso de cada folha sai em branco. Dá para orientar o grupo a
+rascunhar ali antes de passar a limpo, sem nenhum custo adicional de impressão.
+
+**Se precisar cortar custo:** dobrar as instruções no topo das páginas de exercício leva
+o material de 7 para 5 folhas. Não é o que você pediu no áudio — você falou em "a
+instrução e o exercício" separados — então mantive separado. Fica registrado como
+alavanca, se a conta apertar.
 
 ---
 
 ## 4. Arquitetura das páginas
 
-### V1 — Fiel · 8 páginas (4 folhas)
+### V1 — Fiel · 7 folhas
 
 Regra: **nenhuma palavra de conteúdo muda.** Vale corrigir ortografia, reposicionar
-elementos, fundir ou dividir páginas, e trazer para a folha o que estava só nas notas
-do apresentador quando for texto que já existe.
+elementos, fundir páginas, e trazer para a folha o que estava só nas notas do
+apresentador quando for texto que já existe.
 
 | Pág | Conteúdo | Origem |
 |---|---|---|
-| 1 | **Capa** — selo AGEO + Sinapsy, título, barra laranja, subtítulo, faixa "Treinamento prático • material editável" | original s1 |
-| 2 | **A escada** — `EU → OUTROS → LÍDERES → FUNÇÃO` em diagrama grande, sai da capa e ganha a folha | original s1 (relocado) |
-| 3 | **Autodiagnóstico** — 6 afirmações, escala 1–5 para circular, e o QR do formulário no rodapé com a URL em texto | original s2 + s3 (fundidos) |
-| 4 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
-| 5 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com pauta | original s4 |
-| 6 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
-| 7 | **Compromisso de 24 horas** ← exercício, folha limpa, 3 blocos com pauta | original s5 |
-| 8 | **Avaliação + Encerramento** — QR da avaliação em cima, "Obrigada!" com a foto da equipe embaixo | original s6 + áudio 2 |
+| 1 | **Capa** — selo AGEO + Sinapsy, título, barra laranja, subtítulo, a escada `EU → OUTROS → LÍDERES → FUNÇÃO` redesenhada em diagrama, faixa "Treinamento prático • material editável" | original s1 |
+| 2 | **Autodiagnóstico** — 6 afirmações, escala 1–5 para circular, e o QR do formulário no rodapé com a URL em texto | original s2 + s3 (fundidos) |
+| 3 | **Instrução — Plano de 30 Dias** | `conteudo_novo` bloco 1 |
+| 4 | **Plano de 30 Dias** ← exercício, folha limpa, 5 blocos com pauta | original s4 |
+| 5 | **Instrução — compromisso de 24 horas** | `conteudo_novo` bloco 2 |
+| 6 | **Compromisso de 24 horas** ← exercício, folha limpa, 3 blocos com pauta | original s5 |
+| 7 | **Avaliação + Encerramento** — QR da avaliação em cima, "Obrigada!" com a foto da equipe embaixo | original s6 + áudio 2 |
 
-Pares que ficam lado a lado: (2,3) escada e diagnóstico · (4,5) instrução e plano ·
-(6,7) instrução e compromisso. Os dois exercícios ficam com a folha inteira.
+Duas folhas a menos que na versão anterior deste plano, e nenhuma perda de conteúdo:
+a escada volta para a capa, e o QR volta para o pé do exercício que ele registra.
 
-### V2 — Autoral · 12 páginas (6 folhas)
+### V2 — Autoral · 10 folhas
 
 Mantém todo o conteúdo original e acrescenta o que falta para o argumento fechar.
 
 | Pág | Conteúdo | Status |
 |---|---|---|
-| 1 | Capa | = V1 |
+| 1 | Capa | = V1, com a escada em versão compacta |
 | 2 | **A escada: o que muda a cada passagem** — desenvolve os três eixos que já estão no subtítulo da capa e nunca aparecem: habilidades, uso do tempo, valores profissionais | novo · resolve o problema 3 |
-| 3 | Autodiagnóstico — cada item marcado com o degrau que testa | = V1 + marcação |
+| 3 | Autodiagnóstico + QR — cada item marcado com o degrau que testa | = V1 + marcação |
 | 4 | **Como ler sua nota** — duas menores notas; a lacuna é de habilidade, tempo ou valor? | novo · resolve o problema 4. É a página que faz o diagnóstico virar plano |
-| 5 | QR do autodiagnóstico, com espaço próprio | separado da p.3 |
-| 6 | Instrução — Plano de 30 Dias | = V1 |
-| 7 | Plano de 30 Dias ← exercício | = V1 |
-| 8 | Instrução — compromisso de 24 horas | = V1 |
-| 9 | Compromisso de 24 horas ← exercício | = V1 |
-| 10 | **O que acontece depois** — o combinado de acompanhamento: quem cobra, quando, como | novo · dá sobrevida ao plano |
-| 11 | QR da avaliação | = V1 |
-| 12 | **Encerramento** — "Obrigada!", foto da equipe, referência bibliográfica | = V1 |
-
-Todos os pares lado a lado funcionam: (2,3) escada e diagnóstico · (4,5) leitura da nota
-e registro no formulário · (6,7) e (8,9) instrução e exercício · (10,11) acompanhamento
-e avaliação.
+| 5 | Instrução — Plano de 30 Dias | = V1 |
+| 6 | Plano de 30 Dias ← exercício | = V1 |
+| 7 | Instrução — compromisso de 24 horas | = V1 |
+| 8 | Compromisso de 24 horas ← exercício | = V1 |
+| 9 | **O que acontece depois** — o combinado de acompanhamento: quem cobra, quando, como | novo · dá sobrevida ao plano |
+| 10 | **Avaliação + Encerramento** | = V1 |
 
 Toda copy nova passa por `/humanizer` antes de entrar.
 
@@ -149,9 +160,9 @@ Sora 800 nos títulos, Inter no texto.
 
 ### Ajustes obrigatórios para papel
 
-- **O fundo creme não pode cobrir a folha inteira.** Chapar `#EAE7DC` em 8 páginas gasta
-  tinta, encarece e sai manchado em impressora comum. O creme fica em faixas e cartões;
-  o corpo da página é branco do papel.
+- **O fundo creme não pode cobrir a folha inteira.** Chapar `#EAE7DC` em 7 páginas gasta
+  tinta, encarece e sai manchado em impressora de escritório. O creme fica em faixas e
+  cartões; o corpo da página é o branco do papel.
 - Corpo de texto em `#1F1F1F` sobre branco. Nada de cinza claro.
 - `#5C6973` sobre creme dá **4,56:1**. Troca por `--ink-soft #56544C`, que dá **6,13:1**.
 - Branco sobre laranja dá **3,55:1** — só em texto grande, nunca em corpo de texto. A
@@ -171,34 +182,33 @@ Sora 800 nos títulos, Inter no texto.
 
 ## 6. A experiência de preencher
 
-É aqui que o material ganha ou perde. Especificações concretas:
+É aqui que o material ganha ou perde. Com margens de 18 mm sobram **261 mm** de altura
+útil por folha; descontando cabeçalho e rodapé, **206 mm** de área de trabalho.
 
 **Pauta.** Linha de escrita a cada **9 mm**, em `rgba(31,31,31,.18)` — visível para guiar,
 discreta o bastante para não competir com a caneta. Nunca uma caixa vazia sem pauta:
 sem linha, a pessoa escreve torto e desiste no meio.
 
-**Plano de 30 Dias — página inteira.** Cabeçalho enxuto (~45 mm), sobram ~215 mm para
-5 blocos de ~43 mm: tag da categoria, a pergunta e **2 linhas** de escrita cada.
+**Plano de 30 Dias — folha inteira.** 5 blocos de **41 mm**: tag da categoria, a pergunta
+e **2 linhas** de escrita cada.
 
-**Compromisso de 24 horas — página inteira.** 3 blocos de ~70 mm, com **4 linhas** cada.
+**Compromisso de 24 horas — folha inteira.** 3 blocos de **69 mm**, com **5 linhas** cada.
 São as respostas que mais importam e as que o original mais aperta.
 
 **Escala 1–5.** Círculos de **9 mm** de diâmetro com **7 mm** entre eles, alinhados à
-direita da afirmação, com cabeçalho "1 raramente … 5 consistentemente" uma vez no topo
-em vez de repetido em cada linha. Traço de 1pt, vazado — feito para circular a caneta.
+direita da afirmação, com o cabeçalho "1 raramente … 5 consistentemente" uma vez no topo
+em vez de repetido em cada linha. Traço de 1 pt, vazado — feito para circular a caneta.
 
 **QR code.** **38 mm** de lado, correção de erro alta por causa do logo Sinapsy no centro,
-preto puro sobre branco (nada de laranja: reduz o contraste de leitura). Sempre com a
-**URL em texto logo abaixo** — no papel não existe link clicável e câmera falha.
+preto puro sobre branco — laranja reduz o contraste de leitura. Sempre com a **URL em
+texto logo abaixo**, porque no papel não existe link clicável e câmera falha.
 
 - autodiagnóstico → `https://form.respondi.app/xd7sBWfV`
 - avaliação → `https://form.respondi.app/3VutxWx6`
 
-Extraí os dois destinos decodificando os QRs do pptx. Confirmar antes de gerar o PDF.
+Confirmados pela cliente.
 
-**Identificação.** Proponho uma linha de **Nome e Data** na capa. É a única adição que eu
-faria mesmo na V1 — um caderno que é distribuído, preenchido e às vezes recolhido precisa
-disso. Fácil de vetar (ver decisão 3).
+**Sem campo de nome e data.** Decidido: o caderno é do participante, não é recolhido.
 
 ---
 
@@ -224,11 +234,11 @@ disso. Fácil de vetar (ver decisão 3).
 | Legibilidade, hierarquia, escala tipográfica | `ui-ux-pro-max` | as guidelines valem igual no papel: medida de linha, peso, espaçamento |
 | Geração e fechamento do PDF | `pdf` | A4, fontes embutidas, junção das páginas, verificação |
 | Alternativa de produção | `opendesign-pdf` | se o caminho Chrome headless der problema com fonte ou quebra de página |
-| Preview para você aprovar | `artifact-design` | cada versão vira uma página de aprovação antes de virar PDF |
+| Preview para aprovação | `artifact-design` | cada versão vira uma página de aprovação antes de virar PDF |
 | Auditoria antes de fechar | `impeccable` | hierarquia e carga cognitiva página a página |
 | Antes de mostrar a V2 | `grilling` | furar o próprio argumento da V2 antes de a cliente furar |
 
-Saíram do plano por causa da mudança de formato: `pptx`, `dataviz`, `emil-design-eng`
+Saíram do plano por causa do formato impresso: `pptx`, `dataviz`, `emil-design-eng`
 e tudo que dependia de interação em tela.
 
 ---
@@ -238,26 +248,28 @@ e tudo que dependia de interação em tela.
 | Fase | Entrega |
 |---|---|
 | 0 | Estrutura no repositório e este planejamento ✅ |
-| 1 | Assets — QRs em 38 mm/300dpi, selo AGEO, logo Sinapsy, `equipe.jpeg` tratada |
+| 1 | Assets — QRs em 38 mm/300 dpi, selo AGEO, logo Sinapsy, `equipe.jpeg` tratada |
 | 2 | `shared/tokens.css` e `shared/print.css` — grade A4, pauta, componentes |
-| 3 | V1 completa → PDF de prova → sua aprovação |
+| 3 | V1 completa → PDF de prova → aprovação |
 | 4 | V2, com a copy nova passando pelo humanizer → PDF de prova → aprovação |
-| 5 | Teste de impressão real (uma folha de cada tipo), ajuste de margem e tinta, PDFs finais |
+| 5 | Teste de impressão real na impressora que vai rodar o material, ajuste de margem e tinta, PDFs finais |
 
 **A fase 5 não é opcional.** Material impresso só está pronto depois de sair de uma
-impressora de verdade. Cor na tela mente.
+impressora de verdade — e impressora de escritório varia muito. Cor na tela mente.
 
 ---
 
-## 10. Decisões pendentes
+## 10. Definições fechadas
 
-1. **As duas URLs dos formulários estão certas?** Decodifiquei dos QRs do pptx:
-   `form.respondi.app/xd7sBWfV` no autodiagnóstico e `form.respondi.app/3VutxWx6` na
-   avaliação. Se os formulários mudaram, preciso dos links novos.
-2. **Frente e verso ou só frente?** Estou desenhando para frente e verso — é o que faz a
-   instrução ficar ao lado do exercício. Se for só frente, a lógica de paginação muda.
-3. **Linha de Nome e Data na capa?** É adição de conteúdo, então precisa do seu aval para
-   entrar na V1.
-4. **Impressora de escritório ou gráfica?** Muda sangria e conversão de cor.
-5. **Este repositório é público.** O relatório do PDL já está lá. Confirma que o material
-   de treinamento da AGEO também pode ficar.
+| | |
+|---|---|
+| URLs dos formulários | Confirmadas: `xd7sBWfV` no autodiagnóstico, `3VutxWx6` na avaliação |
+| Frente e verso | Não. Só frente |
+| Campo de nome e data | Não |
+| Impressão | Impressora de escritório |
+| Repositório público | Confirmado |
+| Foto do encerramento | `equipe.jpeg`, a mesma do relatório do PDL |
+
+Premissa assumida, sem bloquear: as folhas podem acabar soltas ou grampeadas no canto,
+então cada uma é desenhada para funcionar sozinha, com rodapé de identificação e
+numeração.

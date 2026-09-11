@@ -4,7 +4,7 @@ Workbook impresso de exercícios do Programa de Desenvolvimento de Líderes da A
 conduzido pela Sinapsy. Reconstrução do material original com a identidade visual do
 relatório do PDL.
 
-**Entrega:** PDF A4 retrato, impressão colorida, frente e verso.
+**Entrega:** PDF A4 retrato, impressão colorida, só frente.
 **Interação:** papel e caneta nos exercícios, QR code nos formulários.
 
 ## Estrutura
@@ -25,9 +25,10 @@ relatório do PDL.
 |---|---|---|
 | Texto original | intocado | intocado |
 | Páginas novas | só as 3 pedidas nos áudios | + 3 de estrutura de argumento |
-| Total | 8 páginas | 12 páginas |
+| Total | 7 folhas | 10 folhas |
 
-Ambas em múltiplo de 4, para fechar certo em frente-e-verso.
+Cada página é uma folha de papel. Cada folha é desenhada para funcionar sozinha,
+com rodapé de identificação e numeração.
 
 ## Base
 
