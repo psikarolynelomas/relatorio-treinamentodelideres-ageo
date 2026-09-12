@@ -347,6 +347,14 @@ strong { font-weight: 600; }
 .capa .sep { width: .5mm; height: 11mm; background: rgba(31,31,31,.2); }
 .capa .sinapsy { height: 7mm; width: auto; display: block; }
 .capa .bloco { display: flex; flex-direction: column; gap: 4.5mm; position: relative; z-index: 3; }
+.capa .modulo {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 6.5mm;
+  letter-spacing: .05em;
+  color: var(--orange);
+  margin: 0 0 -1mm;
+}
 .capa .titulo {
   font-family: var(--display);
   font-weight: 800;
