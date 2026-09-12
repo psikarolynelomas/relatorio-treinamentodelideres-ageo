@@ -29,7 +29,7 @@
   --display:        'Sora', 'Inter', sans-serif;
   --texto:          'Inter', -apple-system, 'Segoe UI', sans-serif;
 
-  --t-capa:         20mm;    /* título da capa */
+  --t-capa:         12.5mm;  /* título da capa: duas linhas longas; 12,9 e o limite antes de quebrar */
   --t-titulo:        9mm;    /* título de página */
   --t-bloco:         5mm;    /* título de bloco */
   --t-corpo:       3.9mm;
