@@ -15,7 +15,7 @@ na raiz deste repositório: 960 × 570 pt, Sora e Inter, paleta creme e laranja.
 | 3 | Outubro · nota média e distribuição |
 | 4 | Outubro · o que os líderes mais valorizaram, em quatro frentes |
 | 5 | Outubro · aplicação prática e os fatores que dificultam |
-| 6 | Próximos passos · o que investigar e a ação que sai do encontro |
+| 6 | Continuidade · como a AGEO pode apoiar e o tema do próximo encontro |
 | 7 | Encerramento |
 
 ## Critérios editoriais deste relatório
@@ -27,8 +27,9 @@ Definidos pela Sinapsy e aplicados em todas as páginas:
 - **Sem comparativo entre os meses.** Setembro e outubro aparecem em sequência,
   cada um com o próprio recorte, sem variação de um para o outro.
 - **Setembro em leitura curta**, outubro em leitura detalhada.
-- Os fatores que dificultam a execução, tempo e recursos, aparecem nomeados e
-  viram a pauta do próximo encontro.
+- Tempo e recursos aparecem nomeados como agenda de desenvolvimento de longo
+  prazo, não como impedimento. O ciclo com a Sinapsy fecha no próximo encontro,
+  então a página 6 trata de como a AGEO sustenta o avanço depois disso.
 
 Os CSVs de origem **não ficam neste repositório**, que é público.
 

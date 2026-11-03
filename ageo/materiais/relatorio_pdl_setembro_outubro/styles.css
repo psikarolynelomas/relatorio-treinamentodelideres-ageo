@@ -305,6 +305,38 @@ strong { font-weight: 700; color: inherit; }
 .caixa li strong { color: #fff; }
 .caixa-accent li strong { color: var(--ink); }
 
+/* tema do proximo encontro */
+.caixa-tema { display: flex; flex-direction: column; }
+.tema {
+  margin: .2em 0 .9em;
+  padding: 1em 0 .9em;
+  border-top: 1px solid rgba(31,31,31,.1);
+  border-bottom: 1px solid rgba(31,31,31,.1);
+}
+.tema-titulo {
+  display: block;
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  line-height: 1.1;
+}
+.tema-sub {
+  display: block;
+  font-size: .78em;
+  color: var(--ink-soft);
+  margin-top: .3em;
+}
+.tema-nota {
+  font-size: .66em;
+  color: var(--ink-soft);
+  margin: auto 0 0;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
 /* ================= ENCERRAMENTO ================= */
 .final-grid {
   position: absolute;
@@ -325,6 +357,15 @@ strong { font-weight: 700; color: inherit; }
 .final-badge { height: 88px; width: auto; margin-bottom: .6em; display: block; }
 .final-obrigada { font-size: 3em; margin-bottom: .35em; }
 .final-msg { font-size: .8em; line-height: 1.55; color: var(--ink-soft); max-width: 480px; margin-bottom: 1.4em; }
+.final-frase {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1.05em;
+  line-height: 1.3;
+  letter-spacing: -.015em;
+  color: var(--ink);
+  max-width: 420px;
+}
 .final-sinapsy { height: 38px; width: auto; display: block; }
 
 /* ================= RODAPÉ ================= */
